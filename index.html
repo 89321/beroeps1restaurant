@@ -5,13 +5,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Index</title>
-
     <link rel="stylesheet" href="index.css">
+    <title>Homepage</title>
 </head>
 
 <body>
+    <div class="Grid-Container">
+        <header>
+            <img src="./Foto's/Headerfoto.png">
+        </header>
+
+
+
+
+
+        <div class="slideshow-container">
+            <div class="row">
+                <div class="column">
+                    <div class="Slideshow">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="./Foto's/Slideshowfoto1.Jpeg" style="width:60%">
+                        <div class="text">Caption Text</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Slideshow">
+                <div class="column">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./Foto's/Slideshowfoto2.jpeg" style="width:70%">
+                    <div class="text">Caption Two</div>
+                </div>
+            </div>
+
+            <div class="Slideshow">
+                <div class="column">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./Foto's/Slideshowfoto3.jpeg" style="width:70%">
+                    <div class="text">Caption Three</div>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="Info1">
+            <p>
+                <h1><i>Openingstijden</i></h1>
+                Maandag: Closed<br>
+                Dindag: 17:00 - 22:00<br>
+                Woensdag: 17:00 - 22:00<br>
+                Donderdag: 17:00 - 22:00<br>
+                Vrijdag: 17:00 - 22:00<br>
+                Zaterdag: 16:00 - 22:30<br>
+                Zondag: 16:30 - 22:00
+
+                <h1><i>Bezorgtijden</i></h1>
+                Maandag: Closed<br>
+                Dindag: 17:30 - 22:30<br>
+                Woensdag: 17:30 - 22:30<br>
+                Donderdag: 17:30 - 22:30<br>
+                Vrijdag: 17:30 - 22:30<br>
+                Zaterdag: 16:30 - 23:00<br>
+                Zondag: 17:00 - 22:30
+            </p>
+
+            <a href="./menu.html" target="_blank">Bestel</a>
+        </div>
+
+        <div class="Info2">
+            <p>
+                bdhjhjhg hjgsgj gscbl h hck hbjkbkcbkcm, bk bckjvk bk bkjl
+            </p>
+        </div>
+
+        <div class="Info3">
+            <p>
+                bdhjhjhg hjgsgj gscbl h hck hbjkbkcbkcm, bk bckjvk bk bkjl
+            </p>
+        </div>
+
+        <footer>
+            <p>Author: Hege Refsnes<br>
+                <a href=""></a></p>
+        </footer>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("Slideshow");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </div>
 </body>
 
 </html>
