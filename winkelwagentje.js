@@ -48,6 +48,8 @@ function BerekenTotaalPrijs()
     }
 
     document.querySelector("#totaalPrijs").value = finalPrijs;
+
+    window.alert("Je hebt besteld.");
 }
 
 
