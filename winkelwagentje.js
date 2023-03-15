@@ -62,10 +62,12 @@ function UpdateText()
     let totaalPrijsAppel = document.querySelector("#totaalPrijs_appel");
     let totaalPrijsPeer = document.querySelector("#totaalPrijs_peer");
     let totaalPrijsBanaan = document.querySelector("#totaalPrijs_banaan");
+    let aantal = document.querySelector("#aantal");
 
     aantalAppel.value = winkelwagen[0];
     aantalPeer.value = winkelwagen[1];
     aantalBanaan.value = winkelwagen[2];
+    aantal.value = winkelwagen[0] + winkelwagen[1] + winkelwagen[2];
 
     totaalPrijsAppel.value = totaalprijs[0];
     totaalPrijsPeer.value = totaalprijs[1];
