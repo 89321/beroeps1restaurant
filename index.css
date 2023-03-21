@@ -21,7 +21,7 @@ body {
     margin: 20px;
     position: absolute;
     left: 10px;
-    bottom: 0px;
+    bottom: -12%;
 }
 
 a:link,
@@ -43,7 +43,7 @@ a:active {
     background-color: rgb(38, 183, 38);
     width: 300px;
     border: 15px solid green;
-    padding: 50px;
+    padding: 30px;
     margin: 20px;
     position: absolute;
     right: 330px;
@@ -73,8 +73,8 @@ a:active {
 
 .Slideshow {
     display: none;
-    left: 300px;
-    top: 300px;
+    left: 10%;
+    top: 50px;
     position: relative;
 
 }
@@ -86,7 +86,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
- 
+    top: 40px;
     width: 50%;
 }
 
@@ -94,11 +94,11 @@ img {
 .prev,
 .next {
     cursor: pointer;
-    position: absolute;
+    position: relative;
     top: 50%;
     width: auto;
-    padding: 16px;
-    margin-top: -22px;
+    padding: 12px;
+    margin-top: -14px;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -145,6 +145,7 @@ img {
     height: 15px;
     width: 15px;
     margin: 0 2px;
+    left: 0%;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -183,8 +184,9 @@ img {
 }
 
 footer {
-    text-align: center;
-    padding: 100px;
+    padding: 230px;
     background-color: #BDBD8D;
     color: white;
+    text-align: right;
+    
 }
