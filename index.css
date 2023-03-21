@@ -4,6 +4,7 @@
 
 header {
     background-image: url("./Foto's/Headerfoto.png");
+
 }
 
 body {
@@ -18,10 +19,9 @@ body {
     background-color: #BDBD8D;
     width: 300px;
     border: 15px solid black;
-    margin: 20px;
+    margin: 17px;
     position: absolute;
-    left: 10px;
-    bottom: -12%;
+    z-index: 0;
 }
 
 a:link,
@@ -43,22 +43,31 @@ a:active {
     background-color: rgb(38, 183, 38);
     width: 300px;
     border: 15px solid green;
-    padding: 30px;
+
     margin: 20px;
     position: absolute;
     right: 330px;
-    top: 200px;
+    top: 150px;
 }
 
 .Info3 {
     background-color: #F5F5DC;
     width: 300px;
     border: 15px solid green;
-    padding: 50px;
+
     margin: 20px;
     right: -20px;
-    top: 200px;
+    top: 150px;
     position: absolute;
+}
+
+.Info4 {
+    background-color: blanchedalmond;
+    width: 600px;
+    border: 15px solid beige;
+    margin: 17px;
+    position: absolute;
+    right: 50px;
 }
 
 .row {
@@ -78,7 +87,6 @@ a:active {
     position: relative;
 
 }
-
 
 img {
     vertical-align: left;
@@ -183,10 +191,18 @@ img {
     }
 }
 
+@media (max-width: 600px) {
+    .slideshow-container {
+        width: 100%;
+    }
+}
+
+
 footer {
     padding: 230px;
+    top: 170px;
     background-color: #BDBD8D;
     color: white;
     text-align: right;
-    
+
 }
