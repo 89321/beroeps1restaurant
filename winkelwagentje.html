@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Winkelwagentje</title>
-    <script type="text/javascript" src="winkelwagentje.js"></script>
+    <script defer type="text/javascript" src="winkelwagentje.js"></script>
     <link href="winkelwagentje.css" rel="stylesheet">
 </head>
 <body>
@@ -44,6 +44,16 @@
                     <td colspan="3" align=right><input type="button" onclick="BerekenTotaalPrijs()" value="Bereken totaalprijs" class="totaalbutton"></td>
                     <td><input type="text" id="aantal"></td>
                     <td><input type="text" id="totaalPrijs"></td>
+                </tr>
+                <tr>
+                    <button id="myBtn">Bestellen</button>
+
+                    <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Je hebt besteld.</p>
+                    </div>
+                    </div>
                 </tr>
             </table>
         </form>
