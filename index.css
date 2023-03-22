@@ -27,7 +27,7 @@ body {
 a:link,
 a:visited {
     background-color: #F5F5DC;
-    color: white;
+    color: black;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
@@ -54,7 +54,7 @@ a:active {
     background-color: #F5F5DC;
     width: 300px;
     border: 15px solid green;
-
+    
     margin: 20px;
     right: -20px;
     top: 150px;
@@ -196,6 +196,10 @@ img {
         width: 100%;
     }
 }
+
+
+
+
 
 
 footer {
