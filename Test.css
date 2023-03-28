@@ -59,12 +59,12 @@ img {
 .prev,
 .next {
     cursor: pointer;
-    position: relative;
+
     top: 50%;
     width: auto;
     padding: 12px;
     margin-top: -14px;
-    color: white;
+    color: #eab676;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -416,9 +416,7 @@ hr {
     height: auto
 }
 
-img {
-    vertical-align: middle
-}
+
 
 a {
     color: inherit
