@@ -33,7 +33,7 @@
   <div class="top">
     <div class="row padding black">
       <div class="col s3">
-        <a href="#" class="button block black">HOME</a>
+        <a href="./Test.html" class="button block black">HOME</a>
       </div>
       <div class="col s3">
         <a href="./info.html" class="button block black">INFO</a>
@@ -134,24 +134,24 @@
 
 
           <div id="Eat" class="container menu padding-48 card">
-            <h5>Bread Basket</h5>
-            <p class="text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+            <h5>Sushi</h5>
+            <p class="text-grey">Een sushi doos gevulled met 20 stuks willekeurige sushi. 7.50</p><br>
 
-            <h5>Honey Almond Granola with Fruits</h5>
-            <p class="text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+            <h5>Barbecue</h5>
+            <p class="text-grey"> Een bakje van 30 stuks vlees. 15.00</p><br>
 
-            <h5>Belgian Waffle</h5>
-            <p class="text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+            <h5>Zalm</h5>
+            <p class="text-grey"> 3 stuks gekooked zalm met roomsaus 8.50</p><br>
 
-            <h5>Scrambled eggs</h5>
-            <p class="text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+            <h5>Chicken Wok</h5>
+            <p class="text-grey">Met baby mais, paprika, worterls, kip met knoflook oli 7.50</p><br>
 
-            <h5>Blueberry Pancakes</h5>
-            <p class="text-grey">With syrup, butter and lots of berries 8.50</p>
+            <h5>Shrimp Wok</h5>
+            <p class="text-grey">Met groene bonen, baby mais, paprika, en garnalen met teriyaki saus 8.50</p>
           </div>
 
-          <a href="./menu.html">Menu</a>
-          <img src="./Foto's/" style="width:100%;max-width:1000px;margin-top:32px;">
+          <a href="./menu.html">-> Klik hier voor het Hele Menu <- </a> <br>
+              <img src="./Foto's/" style="width:100%;max-width:1000px;margin-top:32px;">
         </div>
       </div>
 
@@ -160,7 +160,7 @@
         <div class="content" style="max-width:700px">
           <h5 class="center padding-48"><span class="tag wide">WHERE TO FIND US</span></h5>
           <p>Find us at some address at some place.</p>
-          <img src="./Foto's/" class="image" style="width:100%">
+          <img src="./Foto's/Adress.png" class="image" style="width:100%">
           <p><span class="tag">FYI!</span> We offer full-service catering for any event, large or small. We understand
             your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
           <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
@@ -196,10 +196,10 @@
         }
         tablinks = document.getElementsByClassName("tablink");
         for (i = 0; i < x.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+          tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
         }
         document.getElementById(menuName).style.display = "block";
-        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        evt.currentTarget.firstElementChild.className += " dark-grey";
       }
       document.getElementById("myLink").click();
 
