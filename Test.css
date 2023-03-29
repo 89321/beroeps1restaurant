@@ -18,6 +18,8 @@ body {
     margin: 0
 }
 
+
+
 article,
 aside,
 details,
@@ -419,7 +421,8 @@ hr {
 
 
 a {
-    color: inherit
+    color: inherit;
+
 }
 
 .table,
@@ -1926,7 +1929,7 @@ a {
 
 .text-white,
 .hover-text-white:hover {
-    color: black !important
+    color: white !important
 }
 
 .text-black,

@@ -11,13 +11,14 @@
     body,
     html {
       height: 100%;
-      font-family: "Inconsolata", sans-serif;
+      font-family: 'Times New Roman', Times, serif;
     }
 
     .bgimg {
       background-position: center;
-      background-size: auto;
-      background-image: url("./Foto's/Headerfoto.png");
+      background-size: cover;
+      background-image: url("./Foto's/headerReplacement3.jpeg");
+      background-repeat: no-repeat;
       min-height: 75%;
     }
 
@@ -36,13 +37,13 @@
         <a href="./Test.html" class="button block black">HOME</a>
       </div>
       <div class="col s3">
-        <a href="./info.html" class="button block black">INFO</a>
+        <a href="#where" class="button block black">INFO</a>
       </div>
       <div class="col s3">
-        <a href="./menu.html" class="button block black">MENU</a>
+        <a href="#menu" class="button block black">MENU</a>
       </div>
       <div class="col s3">
-        <a href="./bestel.html" class="button block black">BESTEL</a>
+        <a href="./winkelwagentje copy.html" class="button block black">BESTEL</a>
       </div>
     </div>
   </div>
@@ -50,10 +51,10 @@
   <!-- Header with image -->
   <header class="bgimg display-container grayscale-min" id="home">
     <div class="display-bottomleft center padding-large hide-small">
-      <span class="tag">Gesloten op Maandag</span><br>
-      <span class="tag">Open van 17:00 tot 22:00 op Dinsdag tot Vrijdag</span><br>
-      <span class="tag">Open van 16:00 tot 22:30 op Zaterdag</span><br>
-      <span class="tag">Open van 16:30 tot 22:00 op Zondag</span>
+      <span class="tag"><i>Selcheley Michiel - 88691</i></span>
+      <span class="tag"><i>Tirell Benard - 89972 </i></span>
+      <span class="tag"><i>Amar Baldewing - 88681</i></span>
+      <span class="tag"></span>
     </div>
     <div class="display-middle center">
       <span class="text-white" style="font-size:90px"><i>Eat Palazzo<br>Schiedam</i></span>
@@ -69,7 +70,7 @@
     <div class="container" id="about">
       <div class="content" style="max-width:700px">
         <h5 class="center padding-64"><span class="tag wide"><i>ABOUT Eat Palazzo Schiedam</i></span></h5>
-        <p><br>Eat Palazzo is een all-you-can eat resturant in Schiedam. Je betaalt 1 totaalbedragaan de kassa en dan
+        <p>Eat Palazzo is een all-you-can eat resturant in Schiedam. Je betaalt 1 totaalbedragaan de kassa en dan
           mag je voor een bepaalde tijd zoveel eten als je wilt.</p>
         <p></p>
         <div class="panel leftbar light-grey">
@@ -100,8 +101,17 @@
             </div>
           </div>
 
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
+          <div class="Slideshow">
+            <div class="colums">
+              <img src="./Foto's/Slideshowfoto3.jpeg">
+              <div class="text"></div>
+            </div>
+          </div>
+
+
+
+          <a class="prev" onclick="plusSlides(-1)"></a>
+          <a class="next" onclick="plusSlides(1)"></a>
 
         </div>
         <br>
@@ -111,11 +121,21 @@
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
         </div>
 
-        <img src="./Foto's/" style="width:100%;max-width:1000px" class="margin-top">
-        <p><strong>Besteltijden:</strong><br> Gesloten op Maandag<br> Dinsdag tot Vrijdag 17:30 tot 22:30 <br> Zaterdag
-          16:30 tot 23:00 <br> Zondag 17:00 tot 22:30</p>
+
+        <p><strong>Openingstijden:</strong></p>
+        <i>Gesloten op Maandag</i><br>
+        <i>Open van 17:00 tot 22:00 op Dinsdag tot Vrijdag</i><br>
+        <i>Open van 16:00 tot 22:30 op Zaterdag</i><br>
+        <i>Open van 16:30 tot 22:00 op Zondag</i>
+        <p><strong>Besteltijden:</strong><br>
+          <i>Gesloten op Maandag</i><br>
+          <i>Bezorgd op Dinsdag tot Vrijdag van 17:30 tot 22:30</i> <br>
+          <i>Bezorgd op Zaterdag van 16:30 tot 23:00</i> <br>
+          <i>Bezorgd op Zondag van 17:00 tot 22:30</i></p>
+
       </div>
     </div>
 
@@ -159,18 +179,29 @@
           <h5 class="center padding-48"><span class="tag wide">WHERE TO FIND US</span></h5>
           <p><i>Waar kun je ons vinden ?</i></p>
           <img src="./Foto's/Adress.png" class="image" style="width:100%">
-          <p><strong>Adress:</strong>Prinses Beatrixlaan 6, 3121 JN Schiedam</p>
-          <p><span class="tag">FYI!</span> We offer full-service catering for any event, large or small. We understand
-            your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-          <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-          <form action="/action_page.php" target="_blank">
-            <p><input class="input padding-16 border" type="text" placeholder="Name" required name="Name"></p>
-            <p><input class="input padding-16 border" type="number" placeholder="How many people" required
-                name="People">
+          <p><strong>Adress:</strong>Prinses Beatrixlaan 6, 3121 JN Schiedam</p><br>
+          <img src="./Foto's/Kids.png" style="width:100%;max-width:1000px" class="margin-top"><br>
+          <p><span class="tag">FYI!</span> Wanneer je met het gezin uit eten gaat is het belangrijk om ervoor te
+            zorgen
+            dat de kinderen het ook naar hun zin hebben. <br> <br>Anders zit je als ouder toch niet echt lekker aan
+            tafel.
+            Dat snappen we maar al te goed. Daarom kunnen onze kleine gasten
+            hun energie lekker kwijt in onze KidsPlaza!<br><br>
+            Dit geweldige speelparadijs voor onze kleine gasten is een heerlijke plek waar de
+            kinderen ongestoord kunnen spelen en een filmpje kunnen pakken in de bios. Daarnaast is er ook voor onze
+            kleinste gasten een speciale dreumeshoek waar ze lekker kunnen spelen.<br><br>
+            Daarnaast kunnen kinderen verschillende bordspelletjes spelen, knutselen/kleuren en koekjes bakken. Ook
+            zorgen
+            de dames van het animatieteam ervoor dat de kinderen geschminkt kunnen worden.</p>
+          <p><strong>Reserveer</strong> een tafel, vraag om de special van vandaag of stuur ons gewoon een
+            bericht:</p>
+          <form onsubmit="showPopup(); return false;">
+            <p><input class="input padding-16 border" type="text" placeholder="Naam" required name="Name"></p>
+            <p><input class="input padding-16 border" type="number" placeholder="Hoeveel mensen" required name="People">
             </p>
-            <p><input class="input padding-16 border" type="datetime-local" placeholder="Date and time" required
+            <p><input class="input padding-16 border" type="datetime-local" placeholder="Datum en tijd" required
                 name="date" value="2023-03-29T20:00"></p>
-            <p><input class="input padding-16 border" type="text" placeholder="Message \ Special requirements" required
+            <p><input class="input padding-16 border" type="text" placeholder="Bericht \ Speciale wensen" required
                 name="Message"></p>
             <p><button class="button black" type="submit">SEND MESSAGE</button></p>
           </form>
@@ -181,11 +212,18 @@
     </div>
 
     <!-- Footer -->
-    <footer class="center light-grey padding-48 large">
-
+    <footer class=" black padding-16 large">
+      <img src="./Foto's/Footer.jpeg" class="image" style="width:10%"><br>
+      <p></p>
     </footer>
 
     <script>
+      //Pop-up message
+      function showPopup() {
+        alert("Bedankt voor je reservering en bericht!");
+      }
+
+
       // Tabbed Menu
       function openMenu(evt, menuName) {
         var i, x, tablinks;
@@ -201,8 +239,6 @@
         evt.currentTarget.firstElementChild.className += " dark-grey";
       }
       document.getElementById("myLink").click();
-
-
 
       let slideIndex = 1;
       showSlides(slideIndex);
@@ -234,6 +270,10 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
       }
+
+      setInterval(function () {
+        plusSlides(1);
+      }, 4000);
     </script>
 
 </body>
