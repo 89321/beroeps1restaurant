@@ -18,7 +18,9 @@ body {
     margin: 0
 }
 
-
+footer, p{
+    text-align: right;
+}
 
 article,
 aside,
