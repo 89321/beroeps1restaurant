@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin-inline: auto;
+    border: 2px solid rgba(231, 231, 231, 0.7);
+    border-radius: 10px;
+    -webkit-box-shadow: 20px 26px 38px 5px rgba(0,0,0,0.45);
+    -moz-box-shadow: 20px 26px 38px 5px rgba(0,0,0,0.45);
+    box-shadow: 20px 26px 38px 5px rgba(0,0,0,0.45);
+}
+
+main .card .img {
+    height: 150px;
+    width: 200px;
+}
+
+main .card .con-card {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid rgba(231, 231, 231, 0.7);
+    border-bottom: 2px solid rgba(231, 231, 231, 0.7);
+}
+
+main .txt {
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(50, 50, 50);
+}
+
+main .card1 .img {
+    background-image: url("./img/img1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .card2 .img {
+    background-image: url("./img/img2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .card3 .img {
+    background-image: url("./img/img3.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .card4 .img {
+    background-image: url("./img/img4.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .card5 .img {
+    background-image: url("./img/img5.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .card button{
+    padding: 10px;
+    background-color: rgb(66, 153, 66);
+    color: #fff;
+    border: none;
+}
+
+main .verzenden {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(66, 153, 66);
+    color: #fff;
+}

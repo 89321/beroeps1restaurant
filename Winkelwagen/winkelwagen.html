@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestel je Maaltijden | Eat Palazzo</title>
+    <link rel="stylesheet" href="winkelwagen.css">
+</head>
+<body>
+    <main>
+        <div class="wrapper con">
+            <div class="card card1">
+                <div class="con-card">
+                    <div class="img"></div>
+                    <div class="txt">Een sushi doos gevulled met 20 stuks willekeurige sushi.</div>
+                    <div class="aantal">
+                        <button id="add" onclick="add(1)">+</button>
+                        <p id="card1">0</p>
+                        <button id="remove" onclick="remove(1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="con-card">
+                    <div class="img"></div>
+                    <div class="txt">Een bakje van 30 stuks vlees.</div>
+                    <div class="aantal">
+                        <button id="add" onclick="add(2)">+</button>
+                        <p id="card2">0</p>
+                        <button id="remove" onclick="remove(2)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card3">
+                <div class="con-card">
+                    <div class="img"></div>
+                    <div class="txt">stuks gekooked zalm met roomsaus</div>
+                    <div class="aantal">
+                        <button id="add" onclick="add(3)">+</button>
+                        <p id="card3">0</p>
+                        <button id="remove" onclick="remove(3)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card4">
+                <div class="con-card">
+                    <div class="img"></div>
+                    <div class="txt">Chicken wok met baby mais, paprika, worterls, kip met knoflook olie.</div>
+                    <div class="aantal">
+                        <button id="add" onclick="add(4)">+</button>
+                        <p id="card4">0</p>
+                        <button id="remove" onclick="remove(4)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card5">
+                <div class="con-card">
+                    <div class="img"></div>
+                    <div class="txt">Shrimp wok met groene bonen, garnalen met teriyaki saus.</div>
+                    <div class="aantal">
+                        <button id="add" onclick="add(5)">+</button>
+                        <p id="card5">0</p>
+                        <button id="remove" onclick="remove(5)">-</button>
+                    </div>
+                </div>
+            </div>
+            <button class="verzenden" onclick="verzenden()">Verstuur bestelling</button>
+        </div>
+    </main>
+    <script src="winkelwagen.js"></script>
+</body>
+</html>
